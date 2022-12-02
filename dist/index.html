@@ -2,29 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-    <title>My-Todo-list</title>
-<script defer src="main.js"></script></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e047873533.js" crossorigin="anonymous"></script>
+    <title>To do list</title>
+<script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
 
 <body>
-    <div class="container">
-        <div class="header border-bottom flex">
-            <h1>Today's to do</h1>
-            <i class="bx bx-refresh"></i>
-        </div>
-        <form class="flex border-bottom" id="form">
-            <input class="input" type="text" name="todo" placeholder="Add to your list..." />
-            <i class='bx bx-subdirectory-left'></i>
-        </form>
-        <div class="todo-container"></div>
-        <div class="clear">
-            <button id="remove" type="button">Clear All Completed</button>
-        </div>
-    </div>
+    <main>
+        <div class="container">
+            <div class="titile">
+                <p> Today's To Do</p>
+            </div>
+            <div class="add">
+                <input type="text" name="additem" class="additem" placeholder="Add your list ...">
+            </div>
+            <div class="items">
+                <div class="item">
+                    <input type="checkbox" name="checkTask" class="checktask">
+                   <input type="text" value="abebe" class="savedItem"  >
+                    <i class="fa fa-trash move-btn" aria-hidden="true"></i>
+                </div>
 
+            </div>
+            <div class="clear">
+                <button> Clear all completed</button>
+            </div>
+
+        </div>
+    </main>
 </body>
 
 </html>
